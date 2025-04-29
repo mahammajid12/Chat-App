@@ -11,9 +11,13 @@ Create a simple chat room manager where users can Create, Edit, and Delete their
 No server setup is needed.
 
 ## Features
-- **Create** chat rooms with a unique user.
+- **Create** chat rooms with a unique name.
 - **Edit** the names of chat rooms you created.
 - **Delete** your own chat rooms.
 - **HTMX** integration simulates async requests.
 - No backend is needed — everything is handled in the frontend.
+
+## HTMX Usage
+- The `create-room-form` uses `hx-post` and `hx-target` to simulate sending data to the server and updating the room list asynchronously.
+- Actual CRUD operations are simulated through `mock_service.js` by dynamically manipulating the DOM.
 
